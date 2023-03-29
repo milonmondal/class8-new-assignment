@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background: #ffffff;
+    color: #333;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.line{
+    width: 150px;
+    height: 5px;
+    margin: 20px auto;
+    background: #fb2259;
+}
+.btn{
+    background: #fb2259;
+    color: #eee;
+    text-transform: uppercase;
+    padding: 12px 14px;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+img{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* header section starts */
+#header{
+    background: url(../images/dawn.jpg) no-repeat center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color:#eee;
+}
+.main-header{
+    background: url(../images/head-600.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 90px;
+    background-blend-mode: multiply;
+    position: fixed;
+}
+.main-header .container{
+    justify-content: space-between;
+}
+
+/* logo section starts */
+.logo{
+    line-height: 1;
+}
+.logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eee;
+    padding: 10px;
+}
+.logo a h2{
+    font-weight: 700;
+    font-size: 35px;
+}
+.logo a h2 span{
+    font-size: 23px;
+}
+
+/* nav section starts */
+.nav-bar{}
+.nav-bar ul{
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+}
+.nav-bar ul li{
+list-style: none;
+padding: 10px;
+}
+.nav-bar ul li a{
+    color:#eee;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-bar ul li a:hover{
+    color: #fb2259;
+}
+
+/* header container section starts */
+.header-container{
+    padding-top: 100px;
+    height: 700px;
+}
+.header-container .content {
+    margin-top: 150px;
+    flex-direction: column; 
+}
+.header-container .content h3{
+    font-weight: 600;
+    font-size: 35px;
+    font-style: italic;
+}
+.header-container .content h1{
+    font-size: 75px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* event section starts */
+#event{
+    margin: 40px 0;
+}
+#event h2{  
+font-size: 50px; 
+text-align: center; 
+color: #000;
+margin: 30px 0;
+}
+.event-cards{
+    justify-content: space-between;
+}
+.event-card{
+    width: 45%;
+    margin: 20px;
+    text-align: center;
+}
+.event-card img{
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;
+    border-radius: 10px;
+}
+.event-card h3{
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+.event-card p{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.event-card a{
+    color: #fb2259;
+    text-decoration: none;
+}
+/* banner section starts */
+#banner{
+    background: url(../images/father.jpg) no-repeat center/cover;
+    background-color: #427bdc;
+    background-blend-mode: multiply;
+    color:#eee;
+    padding: 50px 0;
+    background-attachment: fixed;
+}
+.banner-cards{
+    height: 600px;
+    justify-content: end;
+}
+.banner-cards .banner-card{
+    width: 45%;
+}
+.banner-cards .banner-card .line{
+    margin-left: 0;
+}
+
+.banner-cards .banner-card h1{
+    font-size: 60px;
+}
+.banner-cards .banner-card p{
+    margin-bottom: 20px;
+}
+.banner-cards .banner-card a{
+    color: #eee;
+    text-decoration: none;
+} 
+/* contact form starts */
+#contact{
+    width: 60%;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+}
+.contact-form{
+    background-color: #8080801a;
+    margin: 18px 0 0 0;
+}
+.contact-form h1{
+    font-size: 31px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-top: 13px;
+}
+form{
+    padding: 17px;
+}
+.fname{
+    padding: 15px;
+}
+.fname input {
+    padding: 10px 150px 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: #8080806b;
+}
+.fname input .name{}
+.fname input .name .placeholder{}
+.lname{padding: 15px;}
+.lname input{
+    padding: 10px 150px 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: #8080806b;
+}
+.email{padding: 15px;
+}
+.email input{
+    padding: 10px 150px 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: #8080806b;
+}
+.password{padding: 15px;
+}
+.password input{
+    padding: 10px 150px 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: #8080806b;
+}
+.submit{padding: 15px;
+}
+.submit input {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgba(5, 8, 56, 0.788);color: white;
+    border-radius: 5px;
+    border: none;
+}
+.submit input:hover{
+background-color: #6e747afa;
+}
+.forget-password{
+    margin-bottom: 10px;
+}
+.forget-password a{
+    text-decoration: none;
+}
+
+/* blog section starts */
+#blog{
+    margin: 20px 0 60px 0;
+}
+.blog-cards{
+    justify-content: space-around;
+    align-items: start;
+}
+.blog-card{
+    margin: 0 36px 259px 0;
+    height: 600px;
+}
+.blog-card h2{
+    font-size: 46px;
+    margin-top: 15px;
+}
+.blog-card .line{
+    margin-left: 0;
+    width: 290px;
+}
+.blog-card p{
+    text-align: justify;
+    margin: 20px 0 20px 0;
+}
+.blog-card a{
+}
+.blog-card img{}
+.blog-card .small{
+    height: 350px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+.blog-card .big{
+    height: 450px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+/* footer section starts */
+#footer{
+    background-color: #242222da;
+    color:#eee;
+    margin-top: 20px;
+}
+#footer .footer-cards{
+    justify-content: space-around;
+}
+#footer .footer-cards .footer-card{padding: 0px 0 60px 0;line-height: 1.4;flex-basis: 30%;}
+#footer .footer-cards .footer-card h3{
+font-size: 26px;
+margin: 20px 0;
+}    
+#footer .footer-cards .footer-card i{ 
+border: 1px solid #eee; 
+padding: 10px 15px; 
+margin: 2px;
+color: #eee;
+}
+
+.footer-end{
+    background: #040f1de8;
+    color: #eee;
+    text-align: center;
+    padding: 30px;
+}
+.footer-end p a{
+    color:#eee;
+    font-weight: bold;
+}
+
